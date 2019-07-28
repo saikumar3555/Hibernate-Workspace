@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.nit.entity.Employee" table="EMPLOYEE2">
+<id name="eno" column="EID" >
+
+<!-- <generator class="assigned"/>-->
+
+<!-- <generator class="increment"/> -->  
+
+<!-- identity generator support in mysql not in oracle -->
+<!-- <generator class="identity">  -->
+ 
+ <!-- <generator class="sequence">
+ <param name="seqence_name">hello_seq</param>
+ </generator>  -->
+ 
+ 
+ 
+ <!-- hilo generator support upto 4.x version only -->
+  <!-- <generator class="hilo">
+ <param name="table">HI_TABLE</param>
+ <param name="column">hi</param>
+ <param name="max_lo">5</param>
+ </generator> -->
+ 
+ <!-- <generator class="seqhilo">
+ <param name="sequence">Emo_seq2</param>
+ <param name="max_lo">10</param>
+ </generator> -->
+ 
+ 
+ <!-- <generator class="guid"></generator> -->
+ 
+ <!-- <generator class="uuid"></generator> -->
+ 
+ <generator class="uuid2"></generator>
+ 
+ 
+ 
+ 
+</id>
+<property name="ename" column="ENAME"></property>
+<property name="desg" column="DESG"></property>
+<property name="salary" column="SALARY"></property>
+
+
+
+</class>
+
+
+</hibernate-mapping>

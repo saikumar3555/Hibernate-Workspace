@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        <hibernate-mapping>
+        <class name="com.nt.entity.Project" table="PROJECT">
+        <id name="projID" column="PROJID"></id>
+        <property name="projName" column="PROJNAME"/>
+        <property name="teamSize" column="TEAMSIZE"/>
+        <property name="startDate" column="startDate"/>
+        <property name="releaseDate" column="releaseDate"/>
+        
+        </class>
+        <sql-query name="GET_PROJDETAILS_BY_PROJID">
+        <return class="com.nt.entity.Project"/>
+        <![CDATA[
+        select projID,projName,teamSize,startDate,releaseDate from Project where projId>=:min and projId<=:max
+        ]]>
+        </sql-query>
+        
+        
+        <sql-query name="GET_ALL_RECORDS">
+        <return class="com.nt.entity.Project"/>
+        <![CDATA[
+        select * from Project
+        ]]>
+        </sql-query>
+        
+        
+        <sql-query name="GET_COUNT_OF_RECORDS">
+        <return-scalar column="count(*)" type="int"/>
+        <![CDATA[
+        select count(*) from Project 
+        ]]>
+        </sql-query>
+        
+        </hibernate-mapping>

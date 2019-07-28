@@ -1,0 +1,1 @@
+create table project(projid number(5) primary key, projname varchar2(15),domain varchar2(15),teamsize number(5),sdop Date,cdop Date);

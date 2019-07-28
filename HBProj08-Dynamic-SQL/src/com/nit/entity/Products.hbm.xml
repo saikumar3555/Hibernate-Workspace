@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  <hibernate-mapping>
+  <class name="com.nit.entity.Products" table="PRODUCTS" dynamic-update="true" dynamic-insert="true">
+  <id name="pid"  column="PID"  >
+   <!-- <generator class="increment"/> --></id>
+  <property name="pname"  column="PNAME"></property>
+  <property name="pprice" column="PPRICE"></property>
+  <property name="pquantity" column="PQUANTITY" ></property>
+ 
+  </class>
+  
+  
+  </hibernate-mapping>

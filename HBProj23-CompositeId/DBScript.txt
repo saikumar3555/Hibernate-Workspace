@@ -1,0 +1,13 @@
+create table programers_Project(programerId number(5),programerName varchar2(15),salary number(8,2)
+,projectid number(5),projectName varchar2(15),primary key(programerId,projectid ));
+
+
+
+SQL> desc programers_project;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PROGRAMERID                               NOT NULL NUMBER(5)
+ PROGRAMERNAME                                      VARCHAR2(15)
+ SALARY                                             NUMBER(8,2)
+ PROJECTID                                 NOT NULL NUMBER(5)
+ PROJECTNAME                                        VARCHAR2(15)

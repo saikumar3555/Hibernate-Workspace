@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.nit.entity.Student" table="STUDENT">
+		<id name="sid" column="SID">
+			
+		</id>
+		<property name="name" column="NAME" />
+		<property name="branch" column="BRANCH" />
+		<property name="college" column="COLLEGE" />
+		<component name="address" class="com.nit.entity.Address">
+			<property name="hno" column="HNO" />
+			<property name="city" column="CITY" />
+			<property name="pinCode" column="PINCODE" />
+		</component>
+
+
+	</class>
+
+
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+create table Airtel_Callertune2(custID number(5) primary key,custNAme varchar2(20),MobileNo number(10),Callertune varchar2(20),modificationCount number(3),subscribedDate timestamp,UpdationSubs timestamp );
+
+
+SQL> desc airtel_callertune2;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSTID                                    NOT NULL NUMBER(5)
+ CUSTNAME                                           VARCHAR2(20)
+ MOBILENO                                           NUMBER(10)
+ CALLERTUNE                                         VARCHAR2(20)
+ MODIFICATIONCOUNT                                  NUMBER(3)
+ SUBSCRIBEDDATE                                     TIMESTAMP(6)
+ UPDATIONSUBS                                       TIMESTAMP(6)

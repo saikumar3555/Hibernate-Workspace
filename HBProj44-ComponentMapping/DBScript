@@ -1,0 +1,10 @@
+SQL> desc Student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL NUMBER(5)
+ NAME                                               VARCHAR2(20)
+ BRANCH                                             VARCHAR2(20)
+ COLLEGE                                            VARCHAR2(20)
+ HNO                                                VARCHAR2(20)
+ CITY                                               VARCHAR2(20)
+ PINCODE                                            NUMBER(6)
